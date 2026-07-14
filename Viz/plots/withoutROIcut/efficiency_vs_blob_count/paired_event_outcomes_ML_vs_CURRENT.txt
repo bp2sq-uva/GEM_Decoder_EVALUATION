@@ -1,0 +1,5 @@
+event_outcome number_of_events fraction
+"Both methods successful" 4536 0.47088135
+"Only ML successful" 2820 0.29274369
+"Only conventional CPP successful" 597 0.06197446
+"Both methods unsuccessful" 1680 0.17440050

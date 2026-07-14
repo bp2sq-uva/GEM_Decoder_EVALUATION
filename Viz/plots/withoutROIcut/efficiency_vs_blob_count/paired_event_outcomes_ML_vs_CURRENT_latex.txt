@@ -1,0 +1,15 @@
+\begin{table}[H]
+    \centering
+    \caption{Paired truth-hit event outcomes for the conventional and ML-based reconstruction methods.}
+    \label{tab:paired_event_outcomes}
+    \begin{tabular}{lc}
+        \toprule
+        Event outcome & Number of events \\
+        \midrule
+        Both methods successful & 4536 \\
+        Only ML successful & 2820 \\
+        Only conventional \cpp{} successful & 597 \\
+        Both methods unsuccessful & 1680 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
