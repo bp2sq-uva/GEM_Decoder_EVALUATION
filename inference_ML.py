@@ -14,10 +14,10 @@ from tqdm.auto import tqdm
 # CONFIG
 # ============================================================
 
-INPUT_FILE = "/volatile/halla/sbs/bhasitha/Tracking_ML/GEM_Decoder_EVALUATION/data_for_inference_ML_withoutROIcut.txt"
+INPUT_FILE = "Scratch/ML/textfile_outputs/data_for_inference_ML_withoutROIcut.txt"
 
-OUTPUT_FILE = "scratch/ML/hit_centers_ML.txt"
-PRED_MASK_DIR = "scratch/ML/npz"
+OUTPUT_FILE = "Scratch/ML/textfile_outputs/hit_centers_ML_withoutROIcut.txt"
+PRED_MASK_DIR = "Scratch/ML/npz"
 
 # CKPT_PATH = "../checkpoints_replayed/nosinglestrips_UNet_asymmfocalloss_withsinglestrips_withstripgaps/latest_model.pt"
 # CKPT_PATH = "../checkpoints_replayed/nosinglestrips_UNet_asymmfocalloss_withsinglestrips_withstripgaps_withscheduler/best_candidate_finder.pt"

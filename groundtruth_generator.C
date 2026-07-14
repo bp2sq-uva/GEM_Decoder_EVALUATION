@@ -22,17 +22,17 @@ struct Row {
 #pragma pack(pop)
 
 void ground_truth_generator(
-    Int_t run_number_int = 11590,
-    Int_t analyzeOnTrackOrNot = 0,
-    Int_t nevents_display = 10,
-    const TString output_file_name = "decoding_digitized_data_GEP_16000_25uA.pdf"
+    // Int_t run_number_int = 11590,
+    // Int_t analyzeOnTrackOrNot = 0,
+    // Int_t nevents_display = 10,
+    // const TString output_file_name = "decoding_digitized_data_GEP_16000_25uA.pdf"
 )
 {
   const TString input_root_file =
-    "/volatile/halla/sbs/bhasitha/Tracking_ML/GEM_Decoder_EVALUATION/filtered_replayed.root";
+    "/volatile/halla/sbs/bhasitha/Tracking_ML/GEM_Decoder_EVALUATION/filtered_replayed_withoutROIcut.root";
 
   const TString output_txt_file =
-    "Scratch/Truth_info/groundtruth.txt";
+    "Scratch/Truth_info/groundtruth_withoutROIcut.txt";
 
   // Make sure output directory exists.
   gSystem->mkdir("Scratch/Truth_info", kTRUE);

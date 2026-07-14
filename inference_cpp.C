@@ -21,8 +21,8 @@ double ClusterCenterStrip(double lo, double nstrips){
 }
 
 void inference_cpp(
-    const char *infile,
-    const char *txtoutfile = "scratch/CPP/textfile_outputs/hit_centers_CPP.txt",
+    const char *infile = "/volatile/halla/sbs/bhasitha/Tracking_ML/GEM_Decoder_EVALUATION/filtered_replayed_withoutROIcut.root",
+    const char *txtoutfile = "Scratch/CPP/textfile_outputs/hit_centers_CPP_withoutROIcut.txt",
     const TString prefix = "sbs.gemFT.m0"
 ){
   TChain *T = new TChain("T");
