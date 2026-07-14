@@ -16,7 +16,7 @@ TRUTH_FILE = "Scratch/Truth_info/groundtruth.txt"
 # OUTPUT FILES
 # ============================================================
 
-OUTDIR = "/work/halla/sbs/bhasitha/Tracking_ML/GEMDecoder_ML/GEM_Decoder_EVALUATION/Scratch/Eval_and_Viz"
+OUTDIR = "Scratch/Eval_and_Viz"
 
 MARGIN_STRIPS = 3
 
