@@ -23,7 +23,7 @@
 
 void filter_goodADC_events(
     const char *input_pattern = "/lustre24/expphy/volatile/halla/sbs/adr/gep-sim/GEP3_mod/ML_train/validate/25uA_backg/replayed_GEP3mod_heep_job_51_*.root", 
-    const char *outfile = "/volatile/halla/sbs/bhasitha/Tracking_ML/GEM_Decoder_EVALUATION/filtered_replayed.root",
+    const char *outfile = "/volatile/halla/sbs/bhasitha/Tracking_ML/GEM_Decoder_EVALUATION/filtered_replayed_withoutROIcut.root",
     const TString prefix = "sbs.gemFT.m0",
     const char *ml_txt_outfile = "/work/halla/sbs/bhasitha/Tracking_ML/GEMDecoder_ML/GEM_Decoder_EVALUATION/Scratch/ML/textfile_outputs/data_for_inference_ML_withoutROIcut.txt"
 ){
@@ -332,10 +332,10 @@ void filter_goodADC_events(
         }
       }
 
-      if(nfired_ustrips_inroi > 160 || nfired_vstrips_inroi > 160){
-        nSkippedOver160++;
-        pass_event = false;
-      }
+      // if(nfired_ustrips_inroi > 160 || nfired_vstrips_inroi > 160){
+      //   nSkippedOver160++;
+      //   pass_event = false;
+      // }
     }
 
     // ----------------------------------------------------
