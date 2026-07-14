@@ -216,3 +216,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Large generated data files
+Scratch/Data/rootfiles/filtered_replayed.root
+Scratch/ML/npz/*.npz
