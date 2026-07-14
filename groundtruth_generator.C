@@ -29,7 +29,7 @@ void ground_truth_generator(
 )
 {
   const TString input_root_file =
-    "Scratch/Data/rootfiles/filtered_replayed.root";
+    "/volatile/halla/sbs/bhasitha/Tracking_ML/GEM_Decoder_EVALUATION/filtered_replayed_withoutROIcut.root";
 
   const TString output_txt_file =
     "Scratch/Truth_info/groundtruth_withoutROIcut.txt";
