@@ -338,7 +338,7 @@ def plot_efficiency_vs_quantity(
         )
 
     plt.xlabel(x_label)
-    plt.ylabel("Truth-hit efficiency")
+    plt.ylabel("Efficiency")
     plt.ylim(0.0, 1.05)
     plt.grid(alpha=0.3)
     plt.title(title)
@@ -459,8 +459,8 @@ def main():
     )
 
     success_cols = {
-        "ML": "ML_success",
         "Current C++": "CURRENT_success",
+        "ML": "ML_success",
     }
 
     # ------------------------------------------------------------
