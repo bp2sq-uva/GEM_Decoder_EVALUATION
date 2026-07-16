@@ -310,10 +310,10 @@ def plot_efficiency_vs_quantity(
     plt.xlabel(x_label)
 
     if plot_percent:
-        plt.ylabel("Truth-hit efficiency [%]")
+        plt.ylabel("Efficiency [%]")
         plt.ylim(0, y_max)
     else:
-        plt.ylabel("Truth-hit efficiency")
+        plt.ylabel("Efficiency")
         plt.ylim(0, 1.02)
 
     plt.grid(alpha=0.3)
@@ -435,8 +435,8 @@ def main():
     print(f"Saved merged input table: {merged_csv}")
 
     success_cols = {
-        "ML": "ML_success",
         "Current C++": "CURRENT_success",
+        "ML": "ML_success",
     }
 
     # ------------------------------------------------------------
